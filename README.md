@@ -12,28 +12,6 @@ GradCAM is model-agnostic to architecture and requires **no architectural change
 
 ---
 
-## 📁 Project Structure
-
-```
-gradcam-project/
-│
-├── gradcam_notebook.ipynb       # Main Colab notebook (training + GradCAM visualization)
-├── README.md                    # Project documentation (this file)
-│
-├── data/                        # Dataset directory
-│   ├── train/                   # Training images (class-wise folders)
-│   └── val/                     # Validation images (class-wise folders)
-│
-├── models/                      # Saved model weights
-│   └── model_epoch_30.h5        # Best checkpoint so far
-│
-└── outputs/                     # GradCAM heatmap outputs
-    └── gradcam_samples/
-```
-
-> ⚠️ *Update this structure as the project evolves.*
-
----
 
 ## 🧠 Model Architecture
 
