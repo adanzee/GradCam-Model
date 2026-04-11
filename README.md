@@ -1,9 +1,5 @@
 # 🔍 GradCAM – Gradient-weighted Class Activation Mapping
 
-> Visual explanations for CNN predictions using Gradient-weighted Class Activation Mapping (GradCAM). This project trains a convolutional neural network on an image classification task and visualizes *where* the model is looking to make its decisions.
-
-
-
 ## 📖 Overview
 
 This project implements **GradCAM (Gradient-weighted Class Activation Mapping)** to interpret and visualize the decision-making regions of a CNN classifier. GradCAM uses the gradients flowing into the final convolutional layer to produce a coarse localization heatmap highlighting important regions in the image for predicting a concept.
