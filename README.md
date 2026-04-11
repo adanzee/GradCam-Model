@@ -25,11 +25,9 @@ The model is a **custom CNN** built with Keras/TensorFlow. Below is the current 
 | 4 | MaxPooling2D | 2×2 |
 | 5 | Conv2D | 128 filters, 3×3, ReLU |
 | 6 | MaxPooling2D | 2×2 |
-| 7 | Flatten | — |
-| 8 | Dense | 256 units, ReLU |
-| 9 | Output | Softmax (N classes) |
+| 7 | Dense | 256 units, ReLU |
+| 8 | Output | Softmax (N classes) |
 
-> ⚠️ **Note:** This architecture is inferred from the project description. Please verify exact layer counts, filter sizes, and dense units from the notebook and update accordingly.
 
 **GradCAM target layer:** Last `Conv2D` layer (Layer 5 above).
 
@@ -48,9 +46,6 @@ The model is a **custom CNN** built with Keras/TensorFlow. Below is the current 
 | Framework | TensorFlow / Keras |
 | Platform | Google Colab |
 
-**Data Augmentation (current):**
-- Horizontal flip
-- Zoom / rotation *(update based on notebook)*
 
 ---
 
