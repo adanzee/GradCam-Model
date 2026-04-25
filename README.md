@@ -81,33 +81,6 @@ Epoch 20–30:  Train →99% |  Val ~82%  → Clear overfitting
 
 ---
 
-## 🗺️ Roadmap – Planned Improvements
-
-The following regularization and optimization techniques are planned to close the generalization gap:
-
-### ✅ Phase 1 – Regularization (Next Step)
-- [ ] **Dropout layers** — Add `Dropout(0.3–0.5)` after Dense layers
-- [ ] **L2 Weight Regularization** — Add `kernel_regularizer=l2(0.001)` to Conv and Dense layers
-- [ ] **Early Stopping** — Stop training when `val_loss` stops improving (patience=5)
-- [ ] **ReduceLROnPlateau** — Reduce learning rate when validation plateaus
-
-### 🔄 Phase 2 – Data & Augmentation
-- [ ] Expand augmentation: shear, brightness shift, channel shift
-- [ ] Collect more training samples if possible
-- [ ] Apply **MixUp** or **CutMix** augmentation
-
-### 🏗️ Phase 3 – Architecture Improvements
-- [ ] Add **Batch Normalization** after Conv layers
-- [ ] Experiment with **Transfer Learning** (VGG16, ResNet50, EfficientNetB0)
-- [ ] Try **Global Average Pooling** instead of Flatten to reduce parameters
-
-### 📈 Phase 4 – Evaluation
-- [ ] Add confusion matrix and per-class metrics
-- [ ] Plot and save training/validation curves
-- [ ] Log experiments with W&B or TensorBoard
-
----
-
 ## 🌡️ GradCAM Visualization
 
 GradCAM generates a **heatmap** overlaid on the input image, highlighting the regions that most influenced the model's classification decision.
