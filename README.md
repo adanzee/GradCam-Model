@@ -128,14 +128,6 @@ Execute all cells in order:
 3. Model training (30 epochs)
 4. GradCAM visualization
 
-### 4. Generate GradCAM Heatmaps
-
-```python
-# Pseudocode — see notebook for actual implementation
-gradcam = GradCAM(model, target_layer="last_conv_layer")
-heatmap = gradcam.compute(image, class_idx)
-overlay = gradcam.overlay(image, heatmap)
-```
 
 ---
 
